@@ -1,3 +1,5 @@
+A modern Gmail-inspired email client built with JavaFX 22 and Jakarta Mail API. Features IMAP/SMTP support, light/dark themes, email previews, and robust error handling.
+
 # 📧 GrokMailClient
 
 ![JavaFX](https://img.shields.io/badge/JavaFX-22-blue?logo=java)
@@ -8,13 +10,7 @@
 **GrokMailClient** is a modern, **Gmail-inspired email client** built with **JavaFX 22** and the **Jakarta Mail API** (successor to JavaMail).  
 Developed as part of a **CodeClause Internship**, this project provides a user-friendly interface for managing emails via **IMAP** and **SMTP** protocols.  
 
-It features a sleek sidebar, email previews, a light/dark theme toggle, and robust error handling — making it ideal for **personal use, hackathons, or learning JavaFX with email APIs**.
-
----
-
-## 👨‍💻 Developed By
-**Rohit Badiger**  
-📅 *September 2025*
+It features a sleek sidebar, email previews, a light/dark theme toggle, and robust error handling — making it ideal for **personal use, or learning JavaFX with email APIs**.
 
 ---
 
@@ -199,6 +195,13 @@ Defined in `pom.xml`:
 
 ---
 
+
+## 👨‍💻 Developed By
+**Santosh M C**  
+
+---
+
+
 ## 📜 License
 
 This project is licensed under the **MIT License** – you are free to use, modify, and distribute with attribution.
@@ -209,8 +212,5 @@ This project is licensed under the **MIT License** – you are free to use, modi
 
 * [JavaFX](https://openjfx.io/)
 * [Jakarta Mail](https://eclipse-ee4j.github.io/mail/)
-* [CodeClause Internship](https://codeclause.com/)
 
 ```
-
-
