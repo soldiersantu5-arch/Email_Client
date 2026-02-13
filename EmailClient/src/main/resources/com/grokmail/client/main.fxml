@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.WebView?>
+
+<HBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <TreeView fx:id="foldersTree" prefWidth="200.0" />
+    <VBox HBox.hgrow="ALWAYS">
+        <HBox alignment="CENTER_LEFT" spacing="10.0">
+            <Button text="Compose" onAction="#composeAction" />
+            <Label text="Search:" />
+            <TextField fx:id="searchField" HBox.hgrow="ALWAYS" />
+        </HBox>
+        <TableView fx:id="emailsTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="senderCol" text="Sender" prefWidth="200.0" />
+                <TableColumn fx:id="subjectCol" text="Subject" prefWidth="300.0" />
+                <TableColumn fx:id="dateCol" text="Date" prefWidth="150.0" />
+            </columns>
+        </TableView>
+        <WebView fx:id="emailWebView" prefHeight="300.0" />
+    </VBox>
+</HBox>

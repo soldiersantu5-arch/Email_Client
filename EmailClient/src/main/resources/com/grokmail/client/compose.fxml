@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.HTMLEditor?>
+
+<VBox spacing="10.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label text="To" />
+    <TextField fx:id="toField" />
+    <Label text="Subject" />
+    <TextField fx:id="subjectField" />
+    <HTMLEditor fx:id="htmlEditor" VBox.vgrow="ALWAYS" />
+    <Label text="Attachments" />
+    <ListView fx:id="attachmentsList" prefHeight="100.0" />
+    <HBox spacing="10.0">
+        <Button text="Attach" onAction="#attachAction" />
+        <Button text="Send" onAction="#sendAction" />
+    </HBox>
+</VBox>

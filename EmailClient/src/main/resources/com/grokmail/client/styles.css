@@ -1,0 +1,194 @@
+/* Root styles for global settings */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f4f7fb; /* Light background for a clean look */
+    -fx-text-fill: #2d3748; /* Dark text for readability */
+}
+
+/* VBox and HBox styling for layout containers */
+.vbox, .hbox {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 10, 0, 0, 2);
+}
+
+/* Label styling */
+.label {
+    -fx-text-fill: #4a5568;
+    -fx-font-weight: bold;
+    -fx-padding: 5px 0;
+}
+
+/* TextField and PasswordField styling */
+.text-field, .password-field {
+    -fx-background-color: #edf2f7;
+    -fx-border-color: #cbd5e0;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #2d3748;
+    -fx-prompt-text-fill: #a0aec0;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #3182ce;
+    -fx-background-color: #ffffff;
+    -fx-effect: dropshadow(gaussian, rgba(49, 130, 206, 0.3), 8, 0, 0, 1);
+}
+
+/* Button styling with gradient and animation */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #3182ce, #2b6cb0);
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6px;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #2b6cb0, #2c5282);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: -fx-scale-x 0.2s ease-in-out, -fx-scale-y 0.2s ease-in-out;
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #2c5282, #2a4365);
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+/* TreeView styling for folder navigation */
+.tree-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 10px;
+}
+
+.tree-cell {
+    -fx-padding: 5px;
+    -fx-text-fill: #2d3748;
+    -fx-background-color: transparent;
+}
+
+.tree-cell:selected {
+    -fx-background-color: #bee3f8;
+    -fx-text-fill: #1a4971;
+}
+
+/* TableView styling for email list */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 5px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #e2e8f0;
+    -fx-text-fill: #4a5568;
+    -fx-font-weight: bold;
+    -fx-padding: 8px;
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-padding: 5px;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #bee3f8;
+    -fx-text-fill: #1a4971;
+}
+
+/* WebView styling for email content */
+.web-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+}
+
+/* HTMLEditor styling for compose window */
+.html-editor {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cbd5e0;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 5px;
+}
+
+.html-editor .top-toolbar, .html-editor .bottom-toolbar {
+    -fx-background-color: #edf2f7;
+    -fx-padding: 5px;
+}
+
+/* ListView styling for attachments */
+.list-view {
+    -fx-background-color: #edf2f7;
+    -fx-border-color: #cbd5e0;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-padding: 5px;
+}
+
+.list-cell {
+    -fx-background-color: #ffffff;
+    -fx-padding: 5px;
+    -fx-text-fill: #2d3748;
+}
+
+.list-cell:selected {
+    -fx-background-color: #bee3f8;
+    -fx-text-fill: #1a4971;
+}
+
+/* Optional dark theme (uncomment to enable) */
+.root.dark-theme {
+    -fx-background-color: #2d3748;
+    -fx-text-fill: #e2e8f0;
+}
+.vbox.dark-theme, .hbox.dark-theme {
+    -fx-background-color: #4a5568;
+    -fx-border-color: #718096;
+}
+.label.dark-theme {
+    -fx-text-fill: #e2e8f0;
+}
+.text-field.dark-theme, .password-field.dark-theme {
+    -fx-background-color: #4a5568;
+    -fx-border-color: #718096;
+    -fx-text-fill: #e2e8f0;
+}
+.text-field.dark-theme:focused, .password-field.dark-theme:focused {
+    -fx-border-color: #63b3ed;
+    -fx-background-color: #2d3748;
+}
+.button.dark-theme {
+    -fx-background-color: linear-gradient(to bottom, #63b3ed, #4299e1);
+}
+.button.dark-theme:hover {
+    -fx-background-color: linear-gradient(to bottom, #4299e1, #3182ce);
+}
+.tree-view.dark-theme, .table-view.dark-theme, .web-view.dark-theme, .html-editor.dark-theme, .list-view.dark-theme {
+    -fx-background-color: #4a5568;
+    -fx-border-color: #718096;
+}
+.tree-cell.dark-theme, .table-row-cell.dark-theme, .list-cell.dark-theme {
+    -fx-background-color: #4a5568;
+    -fx-text-fill: #e2e8f0;
+}
+.tree-cell.dark-theme:selected, .table-row-cell.dark-theme:selected, .list-cell.dark-theme:selected {
+    -fx-background-color: #2b6cb0;
+    -fx-text-fill: #e2e8f0;
+}

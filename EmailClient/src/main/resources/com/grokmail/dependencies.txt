@@ -1,0 +1,25 @@
+# ==========================
+# GrokMailClient Dependencies
+# ==========================
+
+# Core Requirements
+JDK 21 (Required for JavaFX 22 and Jakarta Mail API)
+Maven 3.8+ (Dependency management and build tool)
+
+# JavaFX (UI Framework)
+org.openjfx:javafx-controls:22
+org.openjfx:javafx-fxml:22
+org.openjfx:javafx-web:22
+
+# Email Handling (Jakarta Mail API)
+com.sun.mail:jakarta.mail:2.0.1
+
+# Build Plugins
+org.apache.maven.plugins:maven-compiler-plugin:3.13.0
+org.openjfx:javafx-maven-plugin:0.0.8
+
+# Notes
+- Ensure JDK 21 is installed and configured.
+- Use Maven to automatically download and manage these dependencies.
+- Run `mvn clean install` before starting the project.
+- Clear local Maven cache (~/.m2/repository/org/openjfx) if JavaFX version conflicts occur.
