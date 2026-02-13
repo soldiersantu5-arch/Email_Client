@@ -212,6 +212,5 @@ This project is licensed under the **MIT License** – you are free to use, modi
 
 * [JavaFX](https://openjfx.io/)
 * [Jakarta Mail](https://eclipse-ee4j.github.io/mail/)
-* [CodeClause Internship](https://codeclause.com/)
 
 ```
